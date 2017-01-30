@@ -12,7 +12,7 @@ extern "C" {
 #include "crypt.h"
 #include "getopt.h"
 #include "hash.h"
-#include "math.h"
+#include "fitz-math.h"
 #include "pool.h"
 #include "string.h"
 #include "tree.h"

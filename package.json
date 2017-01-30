@@ -1,0 +1,18 @@
+{
+  "name": "react-native-mupdf",
+  "version": "0.0.19",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davearata/react-native-mupdf.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davearata/react-native-mupdf/issues"
+  },
+  "homepage": "https://github.com/davearata/react-native-mupdf#readme"
+}

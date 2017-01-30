@@ -3,7 +3,7 @@
 
 #include "system.h"
 #include "context.h"
-#include "math.h"
+#include "fitz-math.h"
 #include "font.h"
 #include "colorspace.h"
 #include "image.h"

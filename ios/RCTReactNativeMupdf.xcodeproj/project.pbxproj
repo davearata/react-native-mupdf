@@ -7,11 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D72D2EC1C16249000E22EC1 /* RCTReactNativeMupdf.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D72D2EB1C16249000E22EC1 /* RCTReactNativeMupdf.h */; };
-		5D72D2EE1C16249000E22EC1 /* RCTReactNativeMupdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D72D2ED1C16249000E22EC1 /* RCTReactNativeMupdf.m */; };
-		762177171E3BD1FA0077ADA3 /* libmupdf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 762177141E3BD1FA0077ADA3 /* libmupdf.a */; };
-		762177181E3BD1FA0077ADA3 /* libmupdfthird.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 762177151E3BD1FA0077ADA3 /* libmupdfthird.a */; };
-		762177191E3BD1FA0077ADA3 /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = 762177161E3BD1FA0077ADA3 /* common.m */; };
+		760A2F6E1E3E6289006A304C /* ic_annotation.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F501E3E6289006A304C /* ic_annotation.png */; };
+		760A2F6F1E3E6289006A304C /* ic_annotation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F511E3E6289006A304C /* ic_annotation@2x.png */; };
+		760A2F701E3E6289006A304C /* ic_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F521E3E6289006A304C /* ic_arrow_left.png */; };
+		760A2F711E3E6289006A304C /* ic_arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F531E3E6289006A304C /* ic_arrow_left@2x.png */; };
+		760A2F721E3E6289006A304C /* ic_arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F541E3E6289006A304C /* ic_arrow_right.png */; };
+		760A2F731E3E6289006A304C /* ic_arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F551E3E6289006A304C /* ic_arrow_right@2x.png */; };
+		760A2F741E3E628A006A304C /* ic_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F561E3E6289006A304C /* ic_cancel.png */; };
+		760A2F751E3E628A006A304C /* ic_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F571E3E6289006A304C /* ic_cancel@2x.png */; };
+		760A2F761E3E628A006A304C /* ic_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F581E3E6289006A304C /* ic_check.png */; };
+		760A2F771E3E628A006A304C /* ic_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F591E3E6289006A304C /* ic_check@2x.png */; };
+		760A2F781E3E628A006A304C /* ic_free_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F5A1E3E6289006A304C /* ic_free_text.png */; };
+		760A2F791E3E628A006A304C /* ic_free_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F5B1E3E6289006A304C /* ic_free_text@2x.png */; };
+		760A2F7A1E3E628A006A304C /* ic_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F5C1E3E6289006A304C /* ic_highlight.png */; };
+		760A2F7B1E3E628A006A304C /* ic_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F5D1E3E6289006A304C /* ic_highlight@2x.png */; };
+		760A2F7C1E3E628A006A304C /* ic_link.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F5E1E3E6289006A304C /* ic_link.png */; };
+		760A2F7D1E3E628A006A304C /* ic_link@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F5F1E3E6289006A304C /* ic_link@2x.png */; };
+		760A2F7E1E3E628A006A304C /* ic_magnifying_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F601E3E6289006A304C /* ic_magnifying_glass.png */; };
+		760A2F7F1E3E628A006A304C /* ic_magnifying_glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F611E3E6289006A304C /* ic_magnifying_glass@2x.png */; };
+		760A2F801E3E628A006A304C /* ic_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F621E3E6289006A304C /* ic_more.png */; };
+		760A2F811E3E628A006A304C /* ic_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F631E3E6289006A304C /* ic_more@2x.png */; };
+		760A2F821E3E628A006A304C /* ic_pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F641E3E6289006A304C /* ic_pen.png */; };
+		760A2F831E3E628A006A304C /* ic_pen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F651E3E6289006A304C /* ic_pen@2x.png */; };
+		760A2F841E3E628A006A304C /* ic_print.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F661E3E6289006A304C /* ic_print.png */; };
+		760A2F851E3E628A006A304C /* ic_print@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F671E3E6289006A304C /* ic_print@2x.png */; };
+		760A2F861E3E628A006A304C /* ic_strike.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F681E3E6289006A304C /* ic_strike.png */; };
+		760A2F871E3E628A006A304C /* ic_strike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F691E3E6289006A304C /* ic_strike@2x.png */; };
+		760A2F881E3E628A006A304C /* ic_trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F6A1E3E6289006A304C /* ic_trash.png */; };
+		760A2F891E3E628A006A304C /* ic_trash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F6B1E3E6289006A304C /* ic_trash@2x.png */; };
+		760A2F8A1E3E628A006A304C /* ic_underline.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F6C1E3E6289006A304C /* ic_underline.png */; };
+		760A2F8B1E3E628A006A304C /* ic_underline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F6D1E3E6289006A304C /* ic_underline@2x.png */; };
+		760A2F8E1E3E62AD006A304C /* MuChoiceFieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F8C1E3E62AD006A304C /* MuChoiceFieldController.xib */; };
+		760A2F8F1E3E62AD006A304C /* MuTextFieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760A2F8D1E3E62AD006A304C /* MuTextFieldController.xib */; };
+		762CAA531E3D95CF0024B41A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA2E1E3D95CF0024B41A /* MBProgressHUD.m */; };
+		762CAA551E3D95CF0024B41A /* MuAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA301E3D95CF0024B41A /* MuAnnotation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA571E3D95CF0024B41A /* MuAnnotSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA321E3D95CF0024B41A /* MuAnnotSelectView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA591E3D95CF0024B41A /* MuChoiceFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA341E3D95CF0024B41A /* MuChoiceFieldController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA5D1E3D95CF0024B41A /* MuDocRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA381E3D95CF0024B41A /* MuDocRef.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA5F1E3D95CF0024B41A /* MuDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA3A1E3D95CF0024B41A /* MuDocumentController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA611E3D95CF0024B41A /* MuHitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA3C1E3D95CF0024B41A /* MuHitView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA631E3D95CF0024B41A /* MuInkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA3E1E3D95CF0024B41A /* MuInkView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA651E3D95CF0024B41A /* MuOutlineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA401E3D95CF0024B41A /* MuOutlineController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA681E3D95CF0024B41A /* MuPageViewNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA431E3D95CF0024B41A /* MuPageViewNormal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA6A1E3D95CF0024B41A /* MuPageViewReflow.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA451E3D95CF0024B41A /* MuPageViewReflow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA6C1E3D95CF0024B41A /* MuPrintPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA471E3D95CF0024B41A /* MuPrintPageRenderer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA6E1E3D95CF0024B41A /* MuTapResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA491E3D95CF0024B41A /* MuTapResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA701E3D95CF0024B41A /* MuTextFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA4B1E3D95CF0024B41A /* MuTextFieldController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA731E3D95CF0024B41A /* MuTextSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA4E1E3D95CF0024B41A /* MuTextSelectView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA761E3D95CF0024B41A /* MuWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA511E3D95CF0024B41A /* MuWord.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAA791E3D961C0024B41A /* RCTReactNativeMupdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA781E3D961C0024B41A /* RCTReactNativeMupdf.m */; };
+		762CAA7B1E3D962D0024B41A /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = 762CAA7A1E3D962D0024B41A /* common.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		762CAACA1E3E484B0024B41A /* libmupdfthird.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 762CAAC91E3E484B0024B41A /* libmupdfthird.a */; };
+		762CAACC1E3E48530024B41A /* libmupdf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 762CAACB1E3E48530024B41A /* libmupdf.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,7 +68,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				5D72D2EC1C16249000E22EC1 /* RCTReactNativeMupdf.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,15 +75,155 @@
 
 /* Begin PBXFileReference section */
 		5D72D2E81C16249000E22EC1 /* libRCTReactNativeMupdf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTReactNativeMupdf.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D72D2EB1C16249000E22EC1 /* RCTReactNativeMupdf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTReactNativeMupdf.h; sourceTree = "<group>"; };
-		5D72D2ED1C16249000E22EC1 /* RCTReactNativeMupdf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTReactNativeMupdf.m; sourceTree = "<group>"; };
-		762177101E3BD1FA0077ADA3 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
-		762177111E3BD1FA0077ADA3 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
-		762177121E3BD1FA0077ADA3 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
-		762177131E3BD1FA0077ADA3 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		762177141E3BD1FA0077ADA3 /* libmupdf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmupdf.a; sourceTree = "<group>"; };
-		762177151E3BD1FA0077ADA3 /* libmupdfthird.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmupdfthird.a; sourceTree = "<group>"; };
-		762177161E3BD1FA0077ADA3 /* common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = common.m; sourceTree = "<group>"; };
+		760A2F501E3E6289006A304C /* ic_annotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_annotation.png; path = RCTReactNativeMupdf/resources/ic_annotation.png; sourceTree = "<group>"; };
+		760A2F511E3E6289006A304C /* ic_annotation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_annotation@2x.png"; path = "RCTReactNativeMupdf/resources/ic_annotation@2x.png"; sourceTree = "<group>"; };
+		760A2F521E3E6289006A304C /* ic_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_arrow_left.png; path = RCTReactNativeMupdf/resources/ic_arrow_left.png; sourceTree = "<group>"; };
+		760A2F531E3E6289006A304C /* ic_arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_arrow_left@2x.png"; path = "RCTReactNativeMupdf/resources/ic_arrow_left@2x.png"; sourceTree = "<group>"; };
+		760A2F541E3E6289006A304C /* ic_arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_arrow_right.png; path = RCTReactNativeMupdf/resources/ic_arrow_right.png; sourceTree = "<group>"; };
+		760A2F551E3E6289006A304C /* ic_arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_arrow_right@2x.png"; path = "RCTReactNativeMupdf/resources/ic_arrow_right@2x.png"; sourceTree = "<group>"; };
+		760A2F561E3E6289006A304C /* ic_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_cancel.png; path = RCTReactNativeMupdf/resources/ic_cancel.png; sourceTree = "<group>"; };
+		760A2F571E3E6289006A304C /* ic_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_cancel@2x.png"; path = "RCTReactNativeMupdf/resources/ic_cancel@2x.png"; sourceTree = "<group>"; };
+		760A2F581E3E6289006A304C /* ic_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_check.png; path = RCTReactNativeMupdf/resources/ic_check.png; sourceTree = "<group>"; };
+		760A2F591E3E6289006A304C /* ic_check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_check@2x.png"; path = "RCTReactNativeMupdf/resources/ic_check@2x.png"; sourceTree = "<group>"; };
+		760A2F5A1E3E6289006A304C /* ic_free_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_free_text.png; path = RCTReactNativeMupdf/resources/ic_free_text.png; sourceTree = "<group>"; };
+		760A2F5B1E3E6289006A304C /* ic_free_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_free_text@2x.png"; path = "RCTReactNativeMupdf/resources/ic_free_text@2x.png"; sourceTree = "<group>"; };
+		760A2F5C1E3E6289006A304C /* ic_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_highlight.png; path = RCTReactNativeMupdf/resources/ic_highlight.png; sourceTree = "<group>"; };
+		760A2F5D1E3E6289006A304C /* ic_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_highlight@2x.png"; path = "RCTReactNativeMupdf/resources/ic_highlight@2x.png"; sourceTree = "<group>"; };
+		760A2F5E1E3E6289006A304C /* ic_link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_link.png; path = RCTReactNativeMupdf/resources/ic_link.png; sourceTree = "<group>"; };
+		760A2F5F1E3E6289006A304C /* ic_link@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_link@2x.png"; path = "RCTReactNativeMupdf/resources/ic_link@2x.png"; sourceTree = "<group>"; };
+		760A2F601E3E6289006A304C /* ic_magnifying_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_magnifying_glass.png; path = RCTReactNativeMupdf/resources/ic_magnifying_glass.png; sourceTree = "<group>"; };
+		760A2F611E3E6289006A304C /* ic_magnifying_glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_magnifying_glass@2x.png"; path = "RCTReactNativeMupdf/resources/ic_magnifying_glass@2x.png"; sourceTree = "<group>"; };
+		760A2F621E3E6289006A304C /* ic_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_more.png; path = RCTReactNativeMupdf/resources/ic_more.png; sourceTree = "<group>"; };
+		760A2F631E3E6289006A304C /* ic_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_more@2x.png"; path = "RCTReactNativeMupdf/resources/ic_more@2x.png"; sourceTree = "<group>"; };
+		760A2F641E3E6289006A304C /* ic_pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_pen.png; path = RCTReactNativeMupdf/resources/ic_pen.png; sourceTree = "<group>"; };
+		760A2F651E3E6289006A304C /* ic_pen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_pen@2x.png"; path = "RCTReactNativeMupdf/resources/ic_pen@2x.png"; sourceTree = "<group>"; };
+		760A2F661E3E6289006A304C /* ic_print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_print.png; path = RCTReactNativeMupdf/resources/ic_print.png; sourceTree = "<group>"; };
+		760A2F671E3E6289006A304C /* ic_print@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_print@2x.png"; path = "RCTReactNativeMupdf/resources/ic_print@2x.png"; sourceTree = "<group>"; };
+		760A2F681E3E6289006A304C /* ic_strike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_strike.png; path = RCTReactNativeMupdf/resources/ic_strike.png; sourceTree = "<group>"; };
+		760A2F691E3E6289006A304C /* ic_strike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_strike@2x.png"; path = "RCTReactNativeMupdf/resources/ic_strike@2x.png"; sourceTree = "<group>"; };
+		760A2F6A1E3E6289006A304C /* ic_trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_trash.png; path = RCTReactNativeMupdf/resources/ic_trash.png; sourceTree = "<group>"; };
+		760A2F6B1E3E6289006A304C /* ic_trash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_trash@2x.png"; path = "RCTReactNativeMupdf/resources/ic_trash@2x.png"; sourceTree = "<group>"; };
+		760A2F6C1E3E6289006A304C /* ic_underline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_underline.png; path = RCTReactNativeMupdf/resources/ic_underline.png; sourceTree = "<group>"; };
+		760A2F6D1E3E6289006A304C /* ic_underline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_underline@2x.png"; path = "RCTReactNativeMupdf/resources/ic_underline@2x.png"; sourceTree = "<group>"; };
+		760A2F8C1E3E62AD006A304C /* MuChoiceFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MuChoiceFieldController.xib; path = RCTReactNativeMupdf/Classes/MuChoiceFieldController.xib; sourceTree = "<group>"; };
+		760A2F8D1E3E62AD006A304C /* MuTextFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MuTextFieldController.xib; path = RCTReactNativeMupdf/Classes/MuTextFieldController.xib; sourceTree = "<group>"; };
+		76209AE51E3E92DB00D810ED /* fitz-math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "fitz-math.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/fitz-math.h"; sourceTree = "<group>"; };
+		762CAA2B1E3D95B90024B41A /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = RCTReactNativeMupdf/Classes/MBProgressHUD.h; sourceTree = "<group>"; };
+		762CAA2D1E3D95CF0024B41A /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = RCTReactNativeMupdf/Classes/MBProgressHUD.h; sourceTree = "<group>"; };
+		762CAA2E1E3D95CF0024B41A /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = RCTReactNativeMupdf/Classes/MBProgressHUD.m; sourceTree = "<group>"; };
+		762CAA2F1E3D95CF0024B41A /* MuAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuAnnotation.h; path = RCTReactNativeMupdf/Classes/MuAnnotation.h; sourceTree = "<group>"; };
+		762CAA301E3D95CF0024B41A /* MuAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuAnnotation.m; path = RCTReactNativeMupdf/Classes/MuAnnotation.m; sourceTree = "<group>"; };
+		762CAA311E3D95CF0024B41A /* MuAnnotSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuAnnotSelectView.h; path = RCTReactNativeMupdf/Classes/MuAnnotSelectView.h; sourceTree = "<group>"; };
+		762CAA321E3D95CF0024B41A /* MuAnnotSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuAnnotSelectView.m; path = RCTReactNativeMupdf/Classes/MuAnnotSelectView.m; sourceTree = "<group>"; };
+		762CAA331E3D95CF0024B41A /* MuChoiceFieldController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuChoiceFieldController.h; path = RCTReactNativeMupdf/Classes/MuChoiceFieldController.h; sourceTree = "<group>"; };
+		762CAA341E3D95CF0024B41A /* MuChoiceFieldController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuChoiceFieldController.m; path = RCTReactNativeMupdf/Classes/MuChoiceFieldController.m; sourceTree = "<group>"; };
+		762CAA351E3D95CF0024B41A /* MuChoiceFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MuChoiceFieldController.xib; path = RCTReactNativeMupdf/Classes/MuChoiceFieldController.xib; sourceTree = "<group>"; };
+		762CAA361E3D95CF0024B41A /* MuDialogCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuDialogCreator.h; path = RCTReactNativeMupdf/Classes/MuDialogCreator.h; sourceTree = "<group>"; };
+		762CAA371E3D95CF0024B41A /* MuDocRef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuDocRef.h; path = RCTReactNativeMupdf/Classes/MuDocRef.h; sourceTree = "<group>"; };
+		762CAA381E3D95CF0024B41A /* MuDocRef.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuDocRef.m; path = RCTReactNativeMupdf/Classes/MuDocRef.m; sourceTree = "<group>"; };
+		762CAA391E3D95CF0024B41A /* MuDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuDocumentController.h; path = RCTReactNativeMupdf/Classes/MuDocumentController.h; sourceTree = "<group>"; };
+		762CAA3A1E3D95CF0024B41A /* MuDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuDocumentController.m; path = RCTReactNativeMupdf/Classes/MuDocumentController.m; sourceTree = "<group>"; };
+		762CAA3B1E3D95CF0024B41A /* MuHitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuHitView.h; path = RCTReactNativeMupdf/Classes/MuHitView.h; sourceTree = "<group>"; };
+		762CAA3C1E3D95CF0024B41A /* MuHitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuHitView.m; path = RCTReactNativeMupdf/Classes/MuHitView.m; sourceTree = "<group>"; };
+		762CAA3D1E3D95CF0024B41A /* MuInkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuInkView.h; path = RCTReactNativeMupdf/Classes/MuInkView.h; sourceTree = "<group>"; };
+		762CAA3E1E3D95CF0024B41A /* MuInkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuInkView.m; path = RCTReactNativeMupdf/Classes/MuInkView.m; sourceTree = "<group>"; };
+		762CAA3F1E3D95CF0024B41A /* MuOutlineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuOutlineController.h; path = RCTReactNativeMupdf/Classes/MuOutlineController.h; sourceTree = "<group>"; };
+		762CAA401E3D95CF0024B41A /* MuOutlineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuOutlineController.m; path = RCTReactNativeMupdf/Classes/MuOutlineController.m; sourceTree = "<group>"; };
+		762CAA411E3D95CF0024B41A /* MuPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuPageView.h; path = RCTReactNativeMupdf/Classes/MuPageView.h; sourceTree = "<group>"; };
+		762CAA421E3D95CF0024B41A /* MuPageViewNormal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuPageViewNormal.h; path = RCTReactNativeMupdf/Classes/MuPageViewNormal.h; sourceTree = "<group>"; };
+		762CAA431E3D95CF0024B41A /* MuPageViewNormal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuPageViewNormal.m; path = RCTReactNativeMupdf/Classes/MuPageViewNormal.m; sourceTree = "<group>"; };
+		762CAA441E3D95CF0024B41A /* MuPageViewReflow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuPageViewReflow.h; path = RCTReactNativeMupdf/Classes/MuPageViewReflow.h; sourceTree = "<group>"; };
+		762CAA451E3D95CF0024B41A /* MuPageViewReflow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuPageViewReflow.m; path = RCTReactNativeMupdf/Classes/MuPageViewReflow.m; sourceTree = "<group>"; };
+		762CAA461E3D95CF0024B41A /* MuPrintPageRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuPrintPageRenderer.h; path = RCTReactNativeMupdf/Classes/MuPrintPageRenderer.h; sourceTree = "<group>"; };
+		762CAA471E3D95CF0024B41A /* MuPrintPageRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuPrintPageRenderer.m; path = RCTReactNativeMupdf/Classes/MuPrintPageRenderer.m; sourceTree = "<group>"; };
+		762CAA481E3D95CF0024B41A /* MuTapResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuTapResult.h; path = RCTReactNativeMupdf/Classes/MuTapResult.h; sourceTree = "<group>"; };
+		762CAA491E3D95CF0024B41A /* MuTapResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuTapResult.m; path = RCTReactNativeMupdf/Classes/MuTapResult.m; sourceTree = "<group>"; };
+		762CAA4A1E3D95CF0024B41A /* MuTextFieldController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuTextFieldController.h; path = RCTReactNativeMupdf/Classes/MuTextFieldController.h; sourceTree = "<group>"; };
+		762CAA4B1E3D95CF0024B41A /* MuTextFieldController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuTextFieldController.m; path = RCTReactNativeMupdf/Classes/MuTextFieldController.m; sourceTree = "<group>"; };
+		762CAA4C1E3D95CF0024B41A /* MuTextFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MuTextFieldController.xib; path = RCTReactNativeMupdf/Classes/MuTextFieldController.xib; sourceTree = "<group>"; };
+		762CAA4D1E3D95CF0024B41A /* MuTextSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuTextSelectView.h; path = RCTReactNativeMupdf/Classes/MuTextSelectView.h; sourceTree = "<group>"; };
+		762CAA4E1E3D95CF0024B41A /* MuTextSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuTextSelectView.m; path = RCTReactNativeMupdf/Classes/MuTextSelectView.m; sourceTree = "<group>"; };
+		762CAA4F1E3D95CF0024B41A /* MuUpdater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuUpdater.h; path = RCTReactNativeMupdf/Classes/MuUpdater.h; sourceTree = "<group>"; };
+		762CAA501E3D95CF0024B41A /* MuWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MuWord.h; path = RCTReactNativeMupdf/Classes/MuWord.h; sourceTree = "<group>"; };
+		762CAA511E3D95CF0024B41A /* MuWord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MuWord.m; path = RCTReactNativeMupdf/Classes/MuWord.m; sourceTree = "<group>"; };
+		762CAA781E3D961C0024B41A /* RCTReactNativeMupdf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTReactNativeMupdf.m; path = RCTReactNativeMupdf/RCTReactNativeMupdf.m; sourceTree = "<group>"; };
+		762CAA7A1E3D962D0024B41A /* common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = common.m; path = RCTReactNativeMupdf/common.m; sourceTree = "<group>"; };
+		762CAA7D1E3D97A10024B41A /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = RCTReactNativeMupdf/common.h; sourceTree = "<group>"; };
+		762CAA7E1E3D987A0024B41A /* fitz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fitz.h; path = RCTReactNativeMupdf/include/mupdf/fitz.h; sourceTree = "<group>"; };
+		762CAA7F1E3D987A0024B41A /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = html.h; path = RCTReactNativeMupdf/include/mupdf/html.h; sourceTree = "<group>"; };
+		762CAA801E3D987A0024B41A /* memento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memento.h; path = RCTReactNativeMupdf/include/mupdf/memento.h; sourceTree = "<group>"; };
+		762CAA811E3D98850024B41A /* pdf-tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "pdf-tools.h"; path = "RCTReactNativeMupdf/include/mupdf/pdf-tools.h"; sourceTree = "<group>"; };
+		762CAA821E3D98850024B41A /* pdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pdf.h; path = RCTReactNativeMupdf/include/mupdf/pdf.h; sourceTree = "<group>"; };
+		762CAA831E3D98850024B41A /* xps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xps.h; path = RCTReactNativeMupdf/include/mupdf/xps.h; sourceTree = "<group>"; };
+		762CAA841E3D98970024B41A /* bidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bidi.h; path = RCTReactNativeMupdf/include/mupdf/fitz/bidi.h; sourceTree = "<group>"; };
+		762CAA851E3D98970024B41A /* bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bitmap.h; path = RCTReactNativeMupdf/include/mupdf/fitz/bitmap.h; sourceTree = "<group>"; };
+		762CAA861E3D98970024B41A /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = RCTReactNativeMupdf/include/mupdf/fitz/buffer.h; sourceTree = "<group>"; };
+		762CAA871E3D98970024B41A /* colorspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = colorspace.h; path = RCTReactNativeMupdf/include/mupdf/fitz/colorspace.h; sourceTree = "<group>"; };
+		762CAA881E3D98970024B41A /* compressed-buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "compressed-buffer.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/compressed-buffer.h"; sourceTree = "<group>"; };
+		762CAA891E3D98970024B41A /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = context.h; path = RCTReactNativeMupdf/include/mupdf/fitz/context.h; sourceTree = "<group>"; };
+		762CAA8A1E3D98970024B41A /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = RCTReactNativeMupdf/include/mupdf/fitz/crypt.h; sourceTree = "<group>"; };
+		762CAA8B1E3D98970024B41A /* device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = device.h; path = RCTReactNativeMupdf/include/mupdf/fitz/device.h; sourceTree = "<group>"; };
+		762CAA8C1E3D98970024B41A /* display-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "display-list.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/display-list.h"; sourceTree = "<group>"; };
+		762CAA8D1E3D98970024B41A /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = document.h; path = RCTReactNativeMupdf/include/mupdf/fitz/document.h; sourceTree = "<group>"; };
+		762CAA8E1E3D98970024B41A /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter.h; path = RCTReactNativeMupdf/include/mupdf/fitz/filter.h; sourceTree = "<group>"; };
+		762CAA8F1E3D98970024B41A /* font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = font.h; path = RCTReactNativeMupdf/include/mupdf/fitz/font.h; sourceTree = "<group>"; };
+		762CAA901E3D98970024B41A /* function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = function.h; path = RCTReactNativeMupdf/include/mupdf/fitz/function.h; sourceTree = "<group>"; };
+		762CAA911E3D98970024B41A /* getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = getopt.h; path = RCTReactNativeMupdf/include/mupdf/fitz/getopt.h; sourceTree = "<group>"; };
+		762CAA921E3D98970024B41A /* glyph-cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "glyph-cache.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/glyph-cache.h"; sourceTree = "<group>"; };
+		762CAA931E3D98970024B41A /* glyph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glyph.h; path = RCTReactNativeMupdf/include/mupdf/fitz/glyph.h; sourceTree = "<group>"; };
+		762CAA941E3D98970024B41A /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hash.h; path = RCTReactNativeMupdf/include/mupdf/fitz/hash.h; sourceTree = "<group>"; };
+		762CAA951E3D98970024B41A /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = image.h; path = RCTReactNativeMupdf/include/mupdf/fitz/image.h; sourceTree = "<group>"; };
+		762CAA961E3D98970024B41A /* link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = link.h; path = RCTReactNativeMupdf/include/mupdf/fitz/link.h; sourceTree = "<group>"; };
+		762CAA981E3D98970024B41A /* outline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = outline.h; path = RCTReactNativeMupdf/include/mupdf/fitz/outline.h; sourceTree = "<group>"; };
+		762CAA991E3D98970024B41A /* output-pcl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "output-pcl.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/output-pcl.h"; sourceTree = "<group>"; };
+		762CAA9A1E3D98970024B41A /* output-png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "output-png.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/output-png.h"; sourceTree = "<group>"; };
+		762CAA9B1E3D98970024B41A /* output-pnm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "output-pnm.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/output-pnm.h"; sourceTree = "<group>"; };
+		762CAA9C1E3D98970024B41A /* output-ps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "output-ps.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/output-ps.h"; sourceTree = "<group>"; };
+		762CAA9D1E3D98970024B41A /* output-pwg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "output-pwg.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/output-pwg.h"; sourceTree = "<group>"; };
+		762CAA9E1E3D98970024B41A /* output-svg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "output-svg.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/output-svg.h"; sourceTree = "<group>"; };
+		762CAA9F1E3D98970024B41A /* output-tga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "output-tga.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/output-tga.h"; sourceTree = "<group>"; };
+		762CAAA01E3D98970024B41A /* output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = output.h; path = RCTReactNativeMupdf/include/mupdf/fitz/output.h; sourceTree = "<group>"; };
+		762CAAA11E3D98970024B41A /* path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = path.h; path = RCTReactNativeMupdf/include/mupdf/fitz/path.h; sourceTree = "<group>"; };
+		762CAAA21E3D98970024B41A /* pixmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pixmap.h; path = RCTReactNativeMupdf/include/mupdf/fitz/pixmap.h; sourceTree = "<group>"; };
+		762CAAA31E3D98970024B41A /* pool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pool.h; path = RCTReactNativeMupdf/include/mupdf/fitz/pool.h; sourceTree = "<group>"; };
+		762CAAA41E3D98970024B41A /* separation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = separation.h; path = RCTReactNativeMupdf/include/mupdf/fitz/separation.h; sourceTree = "<group>"; };
+		762CAAA51E3D98970024B41A /* shade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shade.h; path = RCTReactNativeMupdf/include/mupdf/fitz/shade.h; sourceTree = "<group>"; };
+		762CAAA61E3D98970024B41A /* store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = store.h; path = RCTReactNativeMupdf/include/mupdf/fitz/store.h; sourceTree = "<group>"; };
+		762CAAA71E3D98970024B41A /* stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream.h; path = RCTReactNativeMupdf/include/mupdf/fitz/stream.h; sourceTree = "<group>"; };
+		762CAAA81E3D98970024B41A /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string.h; path = RCTReactNativeMupdf/include/mupdf/fitz/string.h; sourceTree = "<group>"; };
+		762CAAA91E3D98970024B41A /* structured-text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "structured-text.h"; path = "RCTReactNativeMupdf/include/mupdf/fitz/structured-text.h"; sourceTree = "<group>"; };
+		762CAAAA1E3D98970024B41A /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = system.h; path = RCTReactNativeMupdf/include/mupdf/fitz/system.h; sourceTree = "<group>"; };
+		762CAAAB1E3D98970024B41A /* text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = text.h; path = RCTReactNativeMupdf/include/mupdf/fitz/text.h; sourceTree = "<group>"; };
+		762CAAAC1E3D98970024B41A /* transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transition.h; path = RCTReactNativeMupdf/include/mupdf/fitz/transition.h; sourceTree = "<group>"; };
+		762CAAAD1E3D98970024B41A /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tree.h; path = RCTReactNativeMupdf/include/mupdf/fitz/tree.h; sourceTree = "<group>"; };
+		762CAAAE1E3D98970024B41A /* ucdn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ucdn.h; path = RCTReactNativeMupdf/include/mupdf/fitz/ucdn.h; sourceTree = "<group>"; };
+		762CAAAF1E3D98970024B41A /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = RCTReactNativeMupdf/include/mupdf/fitz/unzip.h; sourceTree = "<group>"; };
+		762CAAB01E3D98970024B41A /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = RCTReactNativeMupdf/include/mupdf/fitz/util.h; sourceTree = "<group>"; };
+		762CAAB11E3D98970024B41A /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = RCTReactNativeMupdf/include/mupdf/fitz/version.h; sourceTree = "<group>"; };
+		762CAAB21E3D98970024B41A /* xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xml.h; path = RCTReactNativeMupdf/include/mupdf/fitz/xml.h; sourceTree = "<group>"; };
+		762CAAB31E3D98C80024B41A /* annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = annotation.h; path = RCTReactNativeMupdf/include/mupdf/fitz/annotation.h; sourceTree = "<group>"; };
+		762CAAB41E3D98DE0024B41A /* annot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = annot.h; path = RCTReactNativeMupdf/include/mupdf/pdf/annot.h; sourceTree = "<group>"; };
+		762CAAB51E3D98DE0024B41A /* appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appearance.h; path = RCTReactNativeMupdf/include/mupdf/pdf/appearance.h; sourceTree = "<group>"; };
+		762CAAB61E3D98DE0024B41A /* clean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clean.h; path = RCTReactNativeMupdf/include/mupdf/pdf/clean.h; sourceTree = "<group>"; };
+		762CAAB71E3D98DE0024B41A /* cmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmap.h; path = RCTReactNativeMupdf/include/mupdf/pdf/cmap.h; sourceTree = "<group>"; };
+		762CAAB81E3D98DE0024B41A /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event.h; path = RCTReactNativeMupdf/include/mupdf/pdf/event.h; sourceTree = "<group>"; };
+		762CAAB91E3D98DE0024B41A /* field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = field.h; path = RCTReactNativeMupdf/include/mupdf/pdf/field.h; sourceTree = "<group>"; };
+		762CAABA1E3D98DE0024B41A /* interpret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interpret.h; path = RCTReactNativeMupdf/include/mupdf/pdf/interpret.h; sourceTree = "<group>"; };
+		762CAABB1E3D98DE0024B41A /* javascript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = javascript.h; path = RCTReactNativeMupdf/include/mupdf/pdf/javascript.h; sourceTree = "<group>"; };
+		762CAABC1E3D98DE0024B41A /* name-table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "name-table.h"; path = "RCTReactNativeMupdf/include/mupdf/pdf/name-table.h"; sourceTree = "<group>"; };
+		762CAABD1E3D98DE0024B41A /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object.h; path = RCTReactNativeMupdf/include/mupdf/pdf/object.h; sourceTree = "<group>"; };
+		762CAABE1E3D98DE0024B41A /* output-pdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "output-pdf.h"; path = "RCTReactNativeMupdf/include/mupdf/pdf/output-pdf.h"; sourceTree = "<group>"; };
+		762CAABF1E3D98DE0024B41A /* page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = page.h; path = RCTReactNativeMupdf/include/mupdf/pdf/page.h; sourceTree = "<group>"; };
+		762CAAC01E3D98DE0024B41A /* parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parse.h; path = RCTReactNativeMupdf/include/mupdf/pdf/parse.h; sourceTree = "<group>"; };
+		762CAAC11E3D98DE0024B41A /* pdf-crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "pdf-crypt.h"; path = "RCTReactNativeMupdf/include/mupdf/pdf/pdf-crypt.h"; sourceTree = "<group>"; };
+		762CAAC21E3D98DE0024B41A /* pdf-document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "pdf-document.h"; path = "RCTReactNativeMupdf/include/mupdf/pdf/pdf-document.h"; sourceTree = "<group>"; };
+		762CAAC31E3D98DE0024B41A /* pdf-font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "pdf-font.h"; path = "RCTReactNativeMupdf/include/mupdf/pdf/pdf-font.h"; sourceTree = "<group>"; };
+		762CAAC41E3D98DE0024B41A /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resource.h; path = RCTReactNativeMupdf/include/mupdf/pdf/resource.h; sourceTree = "<group>"; };
+		762CAAC51E3D98DE0024B41A /* widget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = widget.h; path = RCTReactNativeMupdf/include/mupdf/pdf/widget.h; sourceTree = "<group>"; };
+		762CAAC61E3D98DE0024B41A /* xref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xref.h; path = RCTReactNativeMupdf/include/mupdf/pdf/xref.h; sourceTree = "<group>"; };
+		762CAAC71E3D98EE0024B41A /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = RCTReactNativeMupdf/include/thirdparty/zlib/contrib/minizip/ioapi.h; sourceTree = "<group>"; };
+		762CAAC91E3E484B0024B41A /* libmupdfthird.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmupdfthird.a; path = RCTReactNativeMupdf/libmupdfthird.a; sourceTree = "<group>"; };
+		762CAACB1E3E48530024B41A /* libmupdf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmupdf.a; path = RCTReactNativeMupdf/libmupdf.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +231,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				762177181E3BD1FA0077ADA3 /* libmupdfthird.a in Frameworks */,
-				762177171E3BD1FA0077ADA3 /* libmupdf.a in Frameworks */,
+				762CAACC1E3E48530024B41A /* libmupdf.a in Frameworks */,
+				762CAACA1E3E484B0024B41A /* libmupdfthird.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +242,155 @@
 		5D72D2DF1C16249000E22EC1 = {
 			isa = PBXGroup;
 			children = (
-				5D72D2EA1C16249000E22EC1 /* RCTReactNativeMupdf */,
+				76209AE51E3E92DB00D810ED /* fitz-math.h */,
+				760A2F8C1E3E62AD006A304C /* MuChoiceFieldController.xib */,
+				760A2F8D1E3E62AD006A304C /* MuTextFieldController.xib */,
+				760A2F501E3E6289006A304C /* ic_annotation.png */,
+				760A2F511E3E6289006A304C /* ic_annotation@2x.png */,
+				760A2F521E3E6289006A304C /* ic_arrow_left.png */,
+				760A2F531E3E6289006A304C /* ic_arrow_left@2x.png */,
+				760A2F541E3E6289006A304C /* ic_arrow_right.png */,
+				760A2F551E3E6289006A304C /* ic_arrow_right@2x.png */,
+				760A2F561E3E6289006A304C /* ic_cancel.png */,
+				760A2F571E3E6289006A304C /* ic_cancel@2x.png */,
+				760A2F581E3E6289006A304C /* ic_check.png */,
+				760A2F591E3E6289006A304C /* ic_check@2x.png */,
+				760A2F5A1E3E6289006A304C /* ic_free_text.png */,
+				760A2F5B1E3E6289006A304C /* ic_free_text@2x.png */,
+				760A2F5C1E3E6289006A304C /* ic_highlight.png */,
+				760A2F5D1E3E6289006A304C /* ic_highlight@2x.png */,
+				760A2F5E1E3E6289006A304C /* ic_link.png */,
+				760A2F5F1E3E6289006A304C /* ic_link@2x.png */,
+				760A2F601E3E6289006A304C /* ic_magnifying_glass.png */,
+				760A2F611E3E6289006A304C /* ic_magnifying_glass@2x.png */,
+				760A2F621E3E6289006A304C /* ic_more.png */,
+				760A2F631E3E6289006A304C /* ic_more@2x.png */,
+				760A2F641E3E6289006A304C /* ic_pen.png */,
+				760A2F651E3E6289006A304C /* ic_pen@2x.png */,
+				760A2F661E3E6289006A304C /* ic_print.png */,
+				760A2F671E3E6289006A304C /* ic_print@2x.png */,
+				760A2F681E3E6289006A304C /* ic_strike.png */,
+				760A2F691E3E6289006A304C /* ic_strike@2x.png */,
+				760A2F6A1E3E6289006A304C /* ic_trash.png */,
+				760A2F6B1E3E6289006A304C /* ic_trash@2x.png */,
+				760A2F6C1E3E6289006A304C /* ic_underline.png */,
+				760A2F6D1E3E6289006A304C /* ic_underline@2x.png */,
+				762CAAC71E3D98EE0024B41A /* ioapi.h */,
+				762CAAB41E3D98DE0024B41A /* annot.h */,
+				762CAAB51E3D98DE0024B41A /* appearance.h */,
+				762CAAB61E3D98DE0024B41A /* clean.h */,
+				762CAAB71E3D98DE0024B41A /* cmap.h */,
+				762CAAB81E3D98DE0024B41A /* event.h */,
+				762CAAB91E3D98DE0024B41A /* field.h */,
+				762CAABA1E3D98DE0024B41A /* interpret.h */,
+				762CAABB1E3D98DE0024B41A /* javascript.h */,
+				762CAABC1E3D98DE0024B41A /* name-table.h */,
+				762CAABD1E3D98DE0024B41A /* object.h */,
+				762CAABE1E3D98DE0024B41A /* output-pdf.h */,
+				762CAABF1E3D98DE0024B41A /* page.h */,
+				762CAAC01E3D98DE0024B41A /* parse.h */,
+				762CAAC11E3D98DE0024B41A /* pdf-crypt.h */,
+				762CAAC21E3D98DE0024B41A /* pdf-document.h */,
+				762CAAC31E3D98DE0024B41A /* pdf-font.h */,
+				762CAAC41E3D98DE0024B41A /* resource.h */,
+				762CAAC51E3D98DE0024B41A /* widget.h */,
+				762CAAC61E3D98DE0024B41A /* xref.h */,
+				762CAAB31E3D98C80024B41A /* annotation.h */,
+				762CAA841E3D98970024B41A /* bidi.h */,
+				762CAA851E3D98970024B41A /* bitmap.h */,
+				762CAA861E3D98970024B41A /* buffer.h */,
+				762CAA871E3D98970024B41A /* colorspace.h */,
+				762CAA881E3D98970024B41A /* compressed-buffer.h */,
+				762CAA891E3D98970024B41A /* context.h */,
+				762CAA8A1E3D98970024B41A /* crypt.h */,
+				762CAA8B1E3D98970024B41A /* device.h */,
+				762CAA8C1E3D98970024B41A /* display-list.h */,
+				762CAA8D1E3D98970024B41A /* document.h */,
+				762CAA8E1E3D98970024B41A /* filter.h */,
+				762CAA8F1E3D98970024B41A /* font.h */,
+				762CAA901E3D98970024B41A /* function.h */,
+				762CAA911E3D98970024B41A /* getopt.h */,
+				762CAA921E3D98970024B41A /* glyph-cache.h */,
+				762CAA931E3D98970024B41A /* glyph.h */,
+				762CAA941E3D98970024B41A /* hash.h */,
+				762CAA951E3D98970024B41A /* image.h */,
+				762CAA961E3D98970024B41A /* link.h */,
+				762CAA981E3D98970024B41A /* outline.h */,
+				762CAA991E3D98970024B41A /* output-pcl.h */,
+				762CAA9A1E3D98970024B41A /* output-png.h */,
+				762CAA9B1E3D98970024B41A /* output-pnm.h */,
+				762CAA9C1E3D98970024B41A /* output-ps.h */,
+				762CAA9D1E3D98970024B41A /* output-pwg.h */,
+				762CAA9E1E3D98970024B41A /* output-svg.h */,
+				762CAA9F1E3D98970024B41A /* output-tga.h */,
+				762CAAA01E3D98970024B41A /* output.h */,
+				762CAAA11E3D98970024B41A /* path.h */,
+				762CAAA21E3D98970024B41A /* pixmap.h */,
+				762CAAA31E3D98970024B41A /* pool.h */,
+				762CAAA41E3D98970024B41A /* separation.h */,
+				762CAAA51E3D98970024B41A /* shade.h */,
+				762CAAA61E3D98970024B41A /* store.h */,
+				762CAAA71E3D98970024B41A /* stream.h */,
+				762CAAA81E3D98970024B41A /* string.h */,
+				762CAAA91E3D98970024B41A /* structured-text.h */,
+				762CAAAA1E3D98970024B41A /* system.h */,
+				762CAAAB1E3D98970024B41A /* text.h */,
+				762CAAAC1E3D98970024B41A /* transition.h */,
+				762CAAAD1E3D98970024B41A /* tree.h */,
+				762CAAAE1E3D98970024B41A /* ucdn.h */,
+				762CAAAF1E3D98970024B41A /* unzip.h */,
+				762CAAB01E3D98970024B41A /* util.h */,
+				762CAAB11E3D98970024B41A /* version.h */,
+				762CAAB21E3D98970024B41A /* xml.h */,
+				762CAA811E3D98850024B41A /* pdf-tools.h */,
+				762CAA821E3D98850024B41A /* pdf.h */,
+				762CAA831E3D98850024B41A /* xps.h */,
+				762CAA7E1E3D987A0024B41A /* fitz.h */,
+				762CAA7F1E3D987A0024B41A /* html.h */,
+				762CAA801E3D987A0024B41A /* memento.h */,
+				762CAA7D1E3D97A10024B41A /* common.h */,
+				762CAA7A1E3D962D0024B41A /* common.m */,
+				762CAA781E3D961C0024B41A /* RCTReactNativeMupdf.m */,
+				762CAA2D1E3D95CF0024B41A /* MBProgressHUD.h */,
+				762CAA2E1E3D95CF0024B41A /* MBProgressHUD.m */,
+				762CAA2F1E3D95CF0024B41A /* MuAnnotation.h */,
+				762CAA301E3D95CF0024B41A /* MuAnnotation.m */,
+				762CAA311E3D95CF0024B41A /* MuAnnotSelectView.h */,
+				762CAA321E3D95CF0024B41A /* MuAnnotSelectView.m */,
+				762CAA331E3D95CF0024B41A /* MuChoiceFieldController.h */,
+				762CAA341E3D95CF0024B41A /* MuChoiceFieldController.m */,
+				762CAA351E3D95CF0024B41A /* MuChoiceFieldController.xib */,
+				762CAA361E3D95CF0024B41A /* MuDialogCreator.h */,
+				762CAA371E3D95CF0024B41A /* MuDocRef.h */,
+				762CAA381E3D95CF0024B41A /* MuDocRef.m */,
+				762CAA391E3D95CF0024B41A /* MuDocumentController.h */,
+				762CAA3A1E3D95CF0024B41A /* MuDocumentController.m */,
+				762CAA3B1E3D95CF0024B41A /* MuHitView.h */,
+				762CAA3C1E3D95CF0024B41A /* MuHitView.m */,
+				762CAA3D1E3D95CF0024B41A /* MuInkView.h */,
+				762CAA3E1E3D95CF0024B41A /* MuInkView.m */,
+				762CAA3F1E3D95CF0024B41A /* MuOutlineController.h */,
+				762CAA401E3D95CF0024B41A /* MuOutlineController.m */,
+				762CAA411E3D95CF0024B41A /* MuPageView.h */,
+				762CAA421E3D95CF0024B41A /* MuPageViewNormal.h */,
+				762CAA431E3D95CF0024B41A /* MuPageViewNormal.m */,
+				762CAA441E3D95CF0024B41A /* MuPageViewReflow.h */,
+				762CAA451E3D95CF0024B41A /* MuPageViewReflow.m */,
+				762CAA461E3D95CF0024B41A /* MuPrintPageRenderer.h */,
+				762CAA471E3D95CF0024B41A /* MuPrintPageRenderer.m */,
+				762CAA481E3D95CF0024B41A /* MuTapResult.h */,
+				762CAA491E3D95CF0024B41A /* MuTapResult.m */,
+				762CAA4A1E3D95CF0024B41A /* MuTextFieldController.h */,
+				762CAA4B1E3D95CF0024B41A /* MuTextFieldController.m */,
+				762CAA4C1E3D95CF0024B41A /* MuTextFieldController.xib */,
+				762CAA4D1E3D95CF0024B41A /* MuTextSelectView.h */,
+				762CAA4E1E3D95CF0024B41A /* MuTextSelectView.m */,
+				762CAA4F1E3D95CF0024B41A /* MuUpdater.h */,
+				762CAA501E3D95CF0024B41A /* MuWord.h */,
+				762CAA511E3D95CF0024B41A /* MuWord.m */,
+				762CAA2B1E3D95B90024B41A /* MBProgressHUD.h */,
 				5D72D2E91C16249000E22EC1 /* Products */,
+				762CAAC81E3E484B0024B41A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,20 +402,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D72D2EA1C16249000E22EC1 /* RCTReactNativeMupdf */ = {
+		762CAAC81E3E484B0024B41A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				762177101E3BD1FA0077ADA3 /* Classes */,
-				762177111E3BD1FA0077ADA3 /* include */,
-				762177121E3BD1FA0077ADA3 /* resources */,
-				762177131E3BD1FA0077ADA3 /* common.h */,
-				762177141E3BD1FA0077ADA3 /* libmupdf.a */,
-				762177151E3BD1FA0077ADA3 /* libmupdfthird.a */,
-				762177161E3BD1FA0077ADA3 /* common.m */,
-				5D72D2EB1C16249000E22EC1 /* RCTReactNativeMupdf.h */,
-				5D72D2ED1C16249000E22EC1 /* RCTReactNativeMupdf.m */,
+				762CAACB1E3E48530024B41A /* libmupdf.a */,
+				762CAAC91E3E484B0024B41A /* libmupdfthird.a */,
 			);
-			path = RCTReactNativeMupdf;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +421,7 @@
 				5D72D2E41C16249000E22EC1 /* Sources */,
 				5D72D2E51C16249000E22EC1 /* Frameworks */,
 				5D72D2E61C16249000E22EC1 /* CopyFiles */,
+				760A2F4F1E3E626B006A304C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -136,13 +463,71 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		760A2F4F1E3E626B006A304C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760A2F8E1E3E62AD006A304C /* MuChoiceFieldController.xib in Resources */,
+				760A2F8F1E3E62AD006A304C /* MuTextFieldController.xib in Resources */,
+				760A2F6E1E3E6289006A304C /* ic_annotation.png in Resources */,
+				760A2F6F1E3E6289006A304C /* ic_annotation@2x.png in Resources */,
+				760A2F701E3E6289006A304C /* ic_arrow_left.png in Resources */,
+				760A2F711E3E6289006A304C /* ic_arrow_left@2x.png in Resources */,
+				760A2F721E3E6289006A304C /* ic_arrow_right.png in Resources */,
+				760A2F731E3E6289006A304C /* ic_arrow_right@2x.png in Resources */,
+				760A2F741E3E628A006A304C /* ic_cancel.png in Resources */,
+				760A2F751E3E628A006A304C /* ic_cancel@2x.png in Resources */,
+				760A2F761E3E628A006A304C /* ic_check.png in Resources */,
+				760A2F771E3E628A006A304C /* ic_check@2x.png in Resources */,
+				760A2F781E3E628A006A304C /* ic_free_text.png in Resources */,
+				760A2F791E3E628A006A304C /* ic_free_text@2x.png in Resources */,
+				760A2F7A1E3E628A006A304C /* ic_highlight.png in Resources */,
+				760A2F7B1E3E628A006A304C /* ic_highlight@2x.png in Resources */,
+				760A2F7C1E3E628A006A304C /* ic_link.png in Resources */,
+				760A2F7D1E3E628A006A304C /* ic_link@2x.png in Resources */,
+				760A2F7E1E3E628A006A304C /* ic_magnifying_glass.png in Resources */,
+				760A2F7F1E3E628A006A304C /* ic_magnifying_glass@2x.png in Resources */,
+				760A2F801E3E628A006A304C /* ic_more.png in Resources */,
+				760A2F811E3E628A006A304C /* ic_more@2x.png in Resources */,
+				760A2F821E3E628A006A304C /* ic_pen.png in Resources */,
+				760A2F831E3E628A006A304C /* ic_pen@2x.png in Resources */,
+				760A2F841E3E628A006A304C /* ic_print.png in Resources */,
+				760A2F851E3E628A006A304C /* ic_print@2x.png in Resources */,
+				760A2F861E3E628A006A304C /* ic_strike.png in Resources */,
+				760A2F871E3E628A006A304C /* ic_strike@2x.png in Resources */,
+				760A2F881E3E628A006A304C /* ic_trash.png in Resources */,
+				760A2F891E3E628A006A304C /* ic_trash@2x.png in Resources */,
+				760A2F8A1E3E628A006A304C /* ic_underline.png in Resources */,
+				760A2F8B1E3E628A006A304C /* ic_underline@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D72D2E41C16249000E22EC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				762177191E3BD1FA0077ADA3 /* common.m in Sources */,
-				5D72D2EE1C16249000E22EC1 /* RCTReactNativeMupdf.m in Sources */,
+				762CAA7B1E3D962D0024B41A /* common.m in Sources */,
+				762CAA791E3D961C0024B41A /* RCTReactNativeMupdf.m in Sources */,
+				762CAA531E3D95CF0024B41A /* MBProgressHUD.m in Sources */,
+				762CAA551E3D95CF0024B41A /* MuAnnotation.m in Sources */,
+				762CAA571E3D95CF0024B41A /* MuAnnotSelectView.m in Sources */,
+				762CAA591E3D95CF0024B41A /* MuChoiceFieldController.m in Sources */,
+				762CAA5D1E3D95CF0024B41A /* MuDocRef.m in Sources */,
+				762CAA5F1E3D95CF0024B41A /* MuDocumentController.m in Sources */,
+				762CAA611E3D95CF0024B41A /* MuHitView.m in Sources */,
+				762CAA631E3D95CF0024B41A /* MuInkView.m in Sources */,
+				762CAA651E3D95CF0024B41A /* MuOutlineController.m in Sources */,
+				762CAA681E3D95CF0024B41A /* MuPageViewNormal.m in Sources */,
+				762CAA6A1E3D95CF0024B41A /* MuPageViewReflow.m in Sources */,
+				762CAA6C1E3D95CF0024B41A /* MuPrintPageRenderer.m in Sources */,
+				762CAA6E1E3D95CF0024B41A /* MuTapResult.m in Sources */,
+				762CAA701E3D95CF0024B41A /* MuTextFieldController.m in Sources */,
+				762CAA731E3D95CF0024B41A /* MuTextSelectView.m in Sources */,
+				762CAA761E3D95CF0024B41A /* MuWord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

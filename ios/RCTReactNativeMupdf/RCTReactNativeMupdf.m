@@ -1,8 +1,6 @@
 #include "common.h"
-#import "MuDocumentController.h"
-#import "MuPdfPlugin.h"
+#import "Classes/MuDocumentController.h"
 #import "RCTReactNativeMupdf.h"
-#import "RCTEventDispatcher.h"
 
 @implementation ReactNativeMupdf
 {
@@ -20,19 +18,19 @@ enum
 
 RCT_EXPORT_MODULE();
 
-queue = dispatch_queue_create("com.artifex.mupdf.queue", NULL);
-
-ctx = fz_new_context(NULL, NULL, ResourceCacheMaxSize);
-fz_register_document_handlers(ctx);
-
-RCT_REMAP_METHOD(openPdf:(NSString *)path documentTitle:(NSString *)documentTitle options:(NSString *)options,
-                 resolver:(RCTPromiseResolveBlock)resolve
-                 rejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXPORT_METHOD(openPdf:(NSString *)path
+                 documentTitle:(NSString *)documentTitle
+                 options:(NSDictionary *)options
+                 callback:(RCTResponseSenderBlock)callback)
 {
+  queue = dispatch_queue_create("com.artifex.mupdf.queue", NULL);
+
+  ctx = fz_new_context(NULL, NULL, ResourceCacheMaxSize);
+  fz_register_document_handlers(ctx);
   if (path != nil && [path length] > 0) {
     [self openDocument:path title:documentTitle options:options];
   } else {
-    reject(@"invalid_path", @"There was no path specified")
+    callback(@[[NSNull null], @"invalid_path"]);
   }
 }
 
@@ -63,15 +61,20 @@ RCT_REMAP_METHOD(openPdf:(NSString *)path documentTitle:(NSString *)documentTitl
                                           selector:@selector(didDismissDocumentController:)
                                           name:@"DocumentControllerDismissed"
                                           object:nil];
-    [self.viewController presentViewController:navigationController animated:YES completion:nil];
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+      UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+      UIViewController *rootViewController = keyWindow.rootViewController;
+      [rootViewController presentViewController:navigationController animated:YES completion: nil];
+    });
   }
   free(_filePath);
 }
 
 -(void)didDismissDocumentController:(NSNotification *)notification {
-  NSDictionary* saveResults = [notification object];
-  [self.bridge.eventDispatcher sendAppEventWithName:@"PdfSaved"
-                                               body:saveResults]
+  // NSDictionary* saveResults = [notification object];
+  // [self.bridge.eventDispatcher sendAppEventWithName:@"PdfSaved"
+  //                                              body:saveResults]
 }
 
 @end

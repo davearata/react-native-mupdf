@@ -3,7 +3,7 @@ import React from 'react-native';
 const ReactNativeMupdf = React.NativeModules.ReactNativeMupdf;
 
 export default {
-  openPdf: () => {
-    return ReactNativeMupdf.openPdf();
+  openPdf: (uri, title, options) => {
+    return ReactNativeMupdf.openPdf(uri, title, options, () => {});
   },
 };
