@@ -1,4 +1,4 @@
-#import "RCTBridge.h"
+#import "RCTEventDispatcher.h"
 
 @interface ReactNativeMupdf : NSObject <RCTBridgeModule>
 
