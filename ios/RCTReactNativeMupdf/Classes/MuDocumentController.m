@@ -116,7 +116,7 @@ static int saveDocFile(char *current_path, char *output_path, fz_document *doc)
 		return written;
 }
 
-static NSDictionary* saveDoc(char *current_path, fz_document *doc, BOOL isAnnotated)
+static NSDictionary* saveDoc(char *current_path, fz_document *doc, BOOL isAnnotated, NSString *itemId)
 {
 	NSString* newAnnotatedFileName;
 	NSString* newAnnotatedFilePath;
@@ -171,6 +171,7 @@ static NSDictionary* saveDoc(char *current_path, fz_document *doc, BOOL isAnnota
 			NSDictionary *newAnnotationResults = [[NSDictionary alloc]
 			initWithObjectsAndKeys:newAnnotatedFileName, @"newAnnotatedFileName",
 															newAnnotatedFilePath, @"newAnnotatedFilePath",
+															itemId, @"newAnnotatedItemId",
 															newAnnotatedFileParentFolder, @"newAnnotatedFileParentFolder",
 															newAnnotatedFileTimestamp, @"newAnnotatedFileTimestamp",
 														 nil];
@@ -214,6 +215,7 @@ static NSDictionary* saveDoc(char *current_path, fz_document *doc, BOOL isAnnota
 	BOOL _isRotating;
 	BOOL annotationsEnabled;
 	BOOL isAnnotatedPdf;
+	NSString *itemId;
 }
 
 - (id) initWithFilename: (NSString*)filename path:(char *)cstr document: (MuDocRef *)aDoc options: (NSDictionary*) options
@@ -233,6 +235,7 @@ static NSDictionary* saveDoc(char *current_path, fz_document *doc, BOOL isAnnota
 
 	annotationsEnabled = [[options valueForKey:@"annotationsEnabled"] boolValue];
     isAnnotatedPdf = [[options valueForKey:@"isAnnotatedPdf"] boolValue];
+		itemId = [(NSString *)[options objectForKey:@"itemId"] retain];
 
 	dispatch_sync(queue, ^{});
 
@@ -400,6 +403,7 @@ static NSDictionary* saveDoc(char *current_path, fz_document *doc, BOOL isAnnota
 
 	[outline release];
 	[key release];
+	[itemId release];
 	[super dealloc];
 }
 
@@ -827,7 +831,7 @@ static NSDictionary* saveDoc(char *current_path, fz_document *doc, BOOL isAnnota
 	{
 		NSDictionary* saveResults = nil;
         if (buttonIndex == 1) {
-            saveResults = saveDoc(_filePath.UTF8String, doc, isAnnotatedPdf);
+            saveResults = saveDoc(_filePath.UTF8String, doc, isAnnotatedPdf, itemId);
         }
 
 		[alertView dismissWithClickedButtonIndex:buttonIndex animated:YES];
@@ -839,7 +843,7 @@ static NSDictionary* saveDoc(char *current_path, fz_document *doc, BOOL isAnnota
 		[alertView dismissWithClickedButtonIndex:buttonIndex animated:NO];
 		if (buttonIndex == 1)
 		{
-			saveDoc(_filePath.UTF8String, doc, isAnnotatedPdf);
+			saveDoc(_filePath.UTF8String, doc, isAnnotatedPdf, itemId);
 			[self shareDocument];
 		}
 	}
