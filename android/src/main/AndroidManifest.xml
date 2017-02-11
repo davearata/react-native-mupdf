@@ -1,3 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.artifex.mupdfdemo">
+    package="com.artifex.reactnativemupdf">
+    <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.artifex.mupdfdemo.MuPDFActivity" android:theme="@android:style/Theme.Light.NoTitleBar" />
+    <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.artifex.mupdfdemo.PrintDialogActivity" android:theme="@android:style/Theme.Light.NoTitleBar" />
 </manifest>

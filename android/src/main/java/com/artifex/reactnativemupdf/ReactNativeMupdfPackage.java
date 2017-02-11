@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.reactnativemupdf;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

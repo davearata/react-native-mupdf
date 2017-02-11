@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.reactnativemupdf;
 
 import android.content.Context;
 
@@ -7,15 +7,23 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.bridge.WritableNativeArray;
+import com.facebook.react.bridge.WritableNativeMap;
+import com.facebook.react.bridge.ActivityEventListener;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
+import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import org.json.JSONException;
 import org.json.JSONObject;
-import android.content.Intent;
+import org.json.JSONArray;
+import java.util.Iterator;
 import com.artifex.mupdfdemo.MuPDFActivity;
 
-class ReactNativeMupdfModule extends ReactContextBaseJavaModule {
-  private Context context;
+class ReactNativeMupdfModule extends ReactContextBaseJavaModule implements ActivityEventListener {
+  private final ReactApplicationContext context;
 
   private static WritableMap convertJsonToMap(JSONObject jsonObject) throws JSONException {
     final WritableMap map = new WritableNativeMap();
@@ -70,6 +78,7 @@ class ReactNativeMupdfModule extends ReactContextBaseJavaModule {
   public ReactNativeMupdfModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.context = reactContext;
+    this.context.addActivityEventListener(this);
   }
 
   /**
@@ -83,31 +92,35 @@ class ReactNativeMupdfModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void openPdf(String path, String documentTitle, ReadableMap options) {
-    final String fileUrl = args.getString(0);
-    final String title = args.getString(1);
-    final JSONObject options = args.getJSONObject(2);
+    final String fileUrl = path;
+    final String title = documentTitle;
     final boolean annotationsEnabled = options.getBoolean("annotationsEnabled");
     final boolean isAnnotatedPdf = options.getBoolean("isAnnotatedPdf");
     final String headerColor = options.getString("headerColor");
     final String itemId = options.getString("itemId");
 
-    Uri uri = Uri.parse(fileUrl);
+    final Uri uri = Uri.parse(fileUrl);
 
-    Intent intent = new Intent(currentActivity.getActivity(), MuPDFActivity.class);
+    final Activity currentActivity = getCurrentActivity();
+
+    Intent intent = new Intent(currentActivity, MuPDFActivity.class);
 
     intent.setAction(Intent.ACTION_VIEW);
     intent.putExtra(MuPDFActivity.KEY_TITLE, title);
     intent.putExtra(MuPDFActivity.KEY_HEADER_COLOR, headerColor);
     intent.putExtra(MuPDFActivity.KEY_ANNOTATIONS_ENABLED, annotationsEnabled);
     intent.putExtra(MuPDFActivity.KEY_IS_ANNOTATED_PDF, isAnnotatedPdf);
-    intent.putExtra(MuPDFActivity.KEY_ITEM_ID, itemId)
+    // intent.putExtra(MuPDFActivity.KEY_ITEM_ID, itemId);
     intent.setData(uri);
 
-    final Activity currentActivity = getCurrentActivity();
-    currentActivity.startActivityForResult(this, intent, 0);
+    currentActivity.startActivityForResult(intent, 0);
   }
 
-  public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+  @Override
+  public void onNewIntent(final Intent intent) {}
+
+  @Override
+  public void onActivityResult(final Activity activity, final int requestCode, final int resultCode, final Intent intent) {
     switch (requestCode) {
     case 0: //integer matching the integer suplied when starting the activity
       if(resultCode == android.app.Activity.RESULT_OK) {
@@ -116,17 +129,13 @@ class ReactNativeMupdfModule extends ReactContextBaseJavaModule {
         if(result != null && result.length() > 0) {
           try {
             final JSONObject saveResults = new JSONObject(result);
-            final WritableMap saveResultsMap = convertJsonToMap(saveResults)
-            this.context
-              .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-              .emit("PdfSaved", saveResultsMap);
+            final WritableMap saveResultsMap = convertJsonToMap(saveResults);
+            this.context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("PdfSaved", saveResultsMap);
           } catch (JSONException e) {
             e.printStackTrace();
           }
         } else {
-          this.context
-            .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-            .emit("PdfSaved");
+          this.context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("PdfSaved", null);
         }
       }
         //  else{
