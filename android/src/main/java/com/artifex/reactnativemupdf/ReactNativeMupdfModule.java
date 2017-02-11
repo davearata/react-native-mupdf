@@ -24,6 +24,7 @@ import com.artifex.mupdfdemo.MuPDFActivity;
 
 class ReactNativeMupdfModule extends ReactContextBaseJavaModule implements ActivityEventListener {
   private final ReactApplicationContext context;
+  private String currentContentId;
 
   private static WritableMap convertJsonToMap(JSONObject jsonObject) throws JSONException {
     final WritableMap map = new WritableNativeMap();
@@ -110,7 +111,7 @@ class ReactNativeMupdfModule extends ReactContextBaseJavaModule implements Activ
     intent.putExtra(MuPDFActivity.KEY_HEADER_COLOR, headerColor);
     intent.putExtra(MuPDFActivity.KEY_ANNOTATIONS_ENABLED, annotationsEnabled);
     intent.putExtra(MuPDFActivity.KEY_IS_ANNOTATED_PDF, isAnnotatedPdf);
-    // intent.putExtra(MuPDFActivity.KEY_ITEM_ID, itemId);
+    currentContentId = itemId;
     intent.setData(uri);
 
     currentActivity.startActivityForResult(intent, 0);
@@ -125,11 +126,12 @@ class ReactNativeMupdfModule extends ReactContextBaseJavaModule implements Activ
     case 0: //integer matching the integer suplied when starting the activity
       if(resultCode == android.app.Activity.RESULT_OK) {
         //in case of success return the string to javascript
-        String result = intent.getStringExtra(MuPDFActivity.KEY_SAVE_RESULTS);
+        final String result = intent.getStringExtra(MuPDFActivity.KEY_SAVE_RESULTS);
         if(result != null && result.length() > 0) {
           try {
             final JSONObject saveResults = new JSONObject(result);
             final WritableMap saveResultsMap = convertJsonToMap(saveResults);
+            saveResultsMap.putString("newAnnotatedItemId", this.currentContentId);
             this.context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("PdfSaved", saveResultsMap);
           } catch (JSONException e) {
             e.printStackTrace();
