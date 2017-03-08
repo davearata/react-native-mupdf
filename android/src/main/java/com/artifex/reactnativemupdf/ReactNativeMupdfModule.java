@@ -16,6 +16,7 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
@@ -23,6 +24,7 @@ import java.util.Iterator;
 import com.artifex.mupdfdemo.MuPDFActivity;
 
 class ReactNativeMupdfModule extends ReactContextBaseJavaModule implements ActivityEventListener {
+  private static final String TAG = "ReactNativeMupdf";
   private final ReactApplicationContext context;
   private String currentItemId;
 
@@ -127,6 +129,7 @@ class ReactNativeMupdfModule extends ReactContextBaseJavaModule implements Activ
       if(resultCode == android.app.Activity.RESULT_OK) {
         //in case of success return the string to javascript
         final String result = intent.getStringExtra(MuPDFActivity.KEY_SAVE_RESULTS);
+        Log.v(TAG, "result=" + result);
         if(result != null && result.length() > 0) {
           try {
             final JSONObject saveResults = new JSONObject(result);
@@ -139,6 +142,8 @@ class ReactNativeMupdfModule extends ReactContextBaseJavaModule implements Activ
         } else {
           this.context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("PdfSaved", null);
         }
+      } else if (resultCode == android.app.Activity.RESULT_CANCELED) {
+        this.context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("PdfSaved", null);
       }
         //  else{
         //      //code launched in case of error
