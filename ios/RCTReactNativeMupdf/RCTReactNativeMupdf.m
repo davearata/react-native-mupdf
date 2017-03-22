@@ -72,6 +72,7 @@ RCT_EXPORT_METHOD(openPdf:(NSString *)path
 }
 
 -(void)didDismissDocumentController:(NSNotification *)notification {
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
   NSDictionary* saveResults = [notification object];
   [self.bridge.eventDispatcher sendAppEventWithName:@"PdfSaved"
                                                body:saveResults];
