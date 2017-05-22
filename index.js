@@ -1,6 +1,6 @@
 import { Platform, NativeModules } from 'react-native'
 
-const ReactNativeMupdf = React.NativeModules.ReactNativeMupdf;
+const ReactNativeMupdf = NativeModules.ReactNativeMupdf;
 
 
 export default {
